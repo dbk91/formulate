@@ -1,4 +1,5 @@
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import red from '@material-ui/core/colors/red';
 
 export default () =>
   createMuiTheme({
@@ -22,5 +23,15 @@ export default () =>
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
       ].join(','),
+    },
+    overrides: {
+      MuiButton: {
+        label: {
+          textTransform: 'capitalize',
+        },
+      },
+    },
+    status: {
+      danger: red[500],
     },
   });

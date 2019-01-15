@@ -4,8 +4,9 @@ import MuiDrawer from '@material-ui/core/Drawer';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 import styles from './Drawer.styles';
+import MainForm from '../MainForm';
 
-const AppDrawer = ({ classes }) => (
+const AppDrawer = ({ setGeneratedForm, classes }) => (
   <MuiDrawer
     variant="permanent"
     className={classes.root}
@@ -14,6 +15,7 @@ const AppDrawer = ({ classes }) => (
     }}
   >
     <div className={classes.toolbar} />
+    <MainForm setGeneratedForm={setGeneratedForm} />
   </MuiDrawer>
 );
 

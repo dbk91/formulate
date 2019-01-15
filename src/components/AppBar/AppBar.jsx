@@ -8,7 +8,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import styles from './AppBar.styles';
 
 const AppBar = ({ classes }) => (
-  <MuiAppBar position="fixed" className={classes.root}>
+  <MuiAppBar position="fixed" className={classes.root} elevation={0}>
     <Toolbar>
       <Typography variant="h6" color="inherit">
         Formulate
